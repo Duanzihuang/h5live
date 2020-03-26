@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>video 详解</title>
+  </head>
+  <body>
+    <!-- 基础用法 -->
+    <!-- <video
+      id="myVideo"
+      src="https://v-cdn.zjol.com.cn/276986.mp4"
+      width="400"
+      height="255"
+      controlslist="nodownload nofullscreen"
+      controls
+      poster="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3523495470,3820340282&fm=26&gp=0.jpg"
+    ></video> -->
+
+    <!-- 备用地址 -->
+    <video id="myVideo" width="400" height="225" controls>
+        <source src=".test.mp4" type="video/mp4" />
+        <source src="https://v-cdn.zjol.com.cn/276986.mp4" type="video/mp4" />
+    </video>
+
+    <script>
+        var video = document.getElementById('myVideo')
+        video.volume = 0.5
+        video.currentTime = 60
+        // video.addEventListener('事件',e => {
+
+        // })
+    </script>
+  </body>
+</html>
